@@ -1,0 +1,11 @@
+# https://github.com/DOMjudge/checktestdata/blob/main/doc/format-spec.md
+
+INT(1, 100, t) NEWLINE
+REP(t)
+	NEWLINE
+	REP( 5, SPACE) INT(0, 3) END NEWLINE
+	REP(12, SPACE) INT(0, 3) END NEWLINE
+	REP(14, SPACE) INT(0, 3) END NEWLINE
+	REP(14, SPACE) INT(0, 3) END NEWLINE
+	REP(42, SPACE) INT(0, 3) END NEWLINE
+END

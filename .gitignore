@@ -1,0 +1,7 @@
+.coverage
+.DS_Store
+.mypy_cache
+*.pyc
+*.tmp
+cs373-grades.bbprojectd
+latex
