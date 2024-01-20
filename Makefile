@@ -103,10 +103,10 @@ run: ../cs373-grades-tests
 
 # execute the run harness against all of the test files in the Grades test repo and diff with the expected output
 run-all: ../cs373-grades-tests
-	$(MYPY)     Grades.py
-	$(MYPY)     run_Grades.py
-	$(PYLINT)   Grades.py
-	$(PYLINT)   run_Grades.py
+	$(MYPY)   Grades.py
+	$(MYPY)   run_Grades.py
+	$(PYLINT) Grades.py
+	$(PYLINT) run_Grades.py
 	-@for v in `ls ../cs373-grades-tests/*.in.txt`;      \
     do                                                   \
         echo $(CHECKTESTDATA) Grades.ctd.txt $${v};      \
