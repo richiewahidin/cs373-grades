@@ -89,7 +89,7 @@ test:
 
 # generate a random input file
 ctd-generate:
-	for v in {1..100}; do $(CHECKTESTDATA) -g Grades.ctd.txt >> Grades.gen.txt; done
+	$(CHECKTESTDATA) -g Grades.ctd.txt >> Grades.gen.txt
 
 # execute the run harness against your test files in the Grades test repo and diff with the expected output
 run: ../cs373-grades-tests
