@@ -98,7 +98,7 @@ run: ../cs373-grades-tests
 	$(PYLINT) Grades.py
 	$(PYLINT) run_Grades.py
 	$(CHECKTESTDATA) Grades.ctd.txt ../cs373-grades-tests/gpdowning-Grades.in.txt    # change gpdowning to your GitLab-ID
-	./run_Grades.py < ../cs373-grades-tests/gpdowning-Grades.in.txt > Grades.tmp.txt # change gpdowning to your GitLab-ID
+	$(PYTHON) run_Grades.py < ../cs373-grades-tests/gpdowning-Grades.in.txt > Grades.tmp.txt # change gpdowning to your GitLab-ID
 	diff Grades.tmp.txt ../cs373-grades-tests/gpdowning-Grades.out.txt               # change gpdowning to your GitLab-ID
 
 # execute the run harness against all of the test files in the Grades test repo and diff with the expected output
@@ -111,8 +111,8 @@ run-all: ../cs373-grades-tests
     do                                                                 \
         echo $(CHECKTESTDATA) Grades.ctd.txt $${v};             \
              $(CHECKTESTDATA) Grades.ctd.txt $${v};             \
-        echo ./run_Grades.py \< $${v} \> Grades.tmp.txt; \
-             ./run_Grades.py  < $${v}  > Grades.tmp.txt; \
+        echo $(PYTHON) run_Grades.py \< $${v} \> Grades.tmp.txt; \
+             $(PYTHON) run_Grades.py  < $${v}  > Grades.tmp.txt; \
         echo diff Grades.tmp.txt $${v/.in/.out};                \
              diff Grades.tmp.txt $${v/.in/.out};                \
     done
