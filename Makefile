@@ -107,14 +107,14 @@ run-all: ../cs373-grades-tests
 	$(MYPY)   run_Grades.py
 	$(PYLINT) Grades.py
 	$(PYLINT) run_Grades.py
-	-@for v in `ls ../cs373-grades-tests/*.in.txt`;      \
-    do                                                   \
-        echo $(CHECKTESTDATA) Grades.ctd.txt $${v};      \
-             $(CHECKTESTDATA) Grades.ctd.txt $${v};      \
+	-@for v in `ls ../cs373-grades-tests/*.in.txt`;             \
+    do                                                                 \
+        echo $(CHECKTESTDATA) Grades.ctd.txt $${v};             \
+             $(CHECKTESTDATA) Grades.ctd.txt $${v};             \
         echo ./run_Grades.py \< $${v} \> Grades.tmp.txt; \
              ./run_Grades.py  < $${v}  > Grades.tmp.txt; \
-        echo diff Grades.tmp.txt $${v/.in/.out};         \
-             diff Grades.tmp.txt $${v/.in/.out};         \
+        echo diff Grades.tmp.txt $${v/.in/.out};                \
+             diff Grades.tmp.txt $${v/.in/.out};                \
     done
 
 # auto format the code
