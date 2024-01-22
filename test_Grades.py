@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#!/usr/bin/env python3
 
 # pylint: disable = invalid-name
 # pylint: disable = line-too-long

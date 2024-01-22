@@ -80,8 +80,8 @@ test:
 	$(MYPY)   test_Grades.py
 	$(PYLINT) Grades.py
 	$(PYLINT) test_Grades.py
-	$(COVERAGE) run --branch test_Grades.py
-	$(COVERAGE) report -m
+	$(PYTHON) -m coverage run --branch test_Grades.py
+	$(PYTHON) -m coverage report -m
 
 # clone the Grades test repo
 ../cs373-grades-tests:

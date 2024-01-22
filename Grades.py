@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#!/usr/bin/env python3
 
 # pylint: disable = invalid-name
 # pylint: disable = missing-docstring
@@ -15,6 +15,6 @@
 # grades_eval
 # -----------
 
-def grades_eval  (l_l_scores: list[list[int]]) -> str :
+def grades_eval (l_l_scores: list[list[int]]) -> str :
     assert l_l_scores
     return "B-"
