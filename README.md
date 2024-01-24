@@ -1,19 +1,19 @@
 # CS373: Software Engineering Grades Repo
 
-* Name: (your Full Name)
+* Name: Richie Adrian Wahidin
 
-* EID: (your EID)
+* EID: raw3643
 
-* GitLab ID: (your GitLab ID)
+* GitLab ID: richiewahidin
 
-* HackerRank ID: (your HackerRank ID)
+* HackerRank ID: richiewahidin
 
 * Git SHA: (most recent Git SHA, final change to your repo will change this, that's ok)
 
 * GitLab Pipelines: (link to your GitLab CI Pipeline)
 
-* Estimated completion time: (estimated time in hours, int or float)
+* Estimated completion time: 12
 
-* Actual completion time: (actual time in hours, int or float)
+* Actual completion time: 
 
 * Comments: (any additional comments you have)
