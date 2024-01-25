@@ -68,7 +68,7 @@ push:
 	git add README.md
 	git add run_Grades.py
 	git add test_Grades.py
-	git commit -m "another commit"
+	git commit -m "Updated Grades.py to be more optimal;Closes #19, closes #33, closes #34"
 	git push
 	git status
 

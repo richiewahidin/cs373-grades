@@ -14,36 +14,44 @@
 # -----------
 # grades_eval
 # -----------
-grades = ("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-")
+
+GRADES = ("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-")
+WORST_GRADE = 10
+THRESHOLDS = [[(5, 0), (4, 2), (3,8)],
+              [(11, 0), (10, 2), (9, 5), (8, 7), (7, 10)],
+              [(13, 0), (12, 2), (11, 4), (10, 6), (9, 8), (8, 10)],
+              [(13, 0), (12, 2), (11, 4), (10, 6), (9, 8), (8, 10)],
+              [(39, 0), (38, 1), (37, 2), (35, 3), (34, 4), (32, 5), (31, 6), (29, 7), (28, 8), (27, 9), (25, 10)]]
+EXCELLENT = 3
+MEETS_EXPECTATIONS = 2
+REVISION_NEEDED = 1
 
 
-def get_scores(scores: list[int], thresholds: tuple[int, int, int, int, int, int, int, int, int, int, int]) -> int :
+def get_scores(scores: list[int], thresholds: list[tuple[int, int]]) -> int :
     pass_counter = 0
     one_counter = 0
     three_counter = 0
     for curr_score in scores:
-        if curr_score >= 2:
+        if curr_score >= MEETS_EXPECTATIONS:
             pass_counter += 1
-            if curr_score == 3:
+            if curr_score == EXCELLENT:
                 three_counter += 1
-        elif curr_score == 1:
+        elif curr_score == REVISION_NEEDED:
             one_counter += 1
     index = 0
     add_to_pass = min(one_counter, three_counter // 2)
     pass_counter += add_to_pass
-    while index < len(thresholds) - 1 and thresholds[index] > pass_counter:
+    index = 0
+    while index < len(thresholds) - 1 and thresholds[index][0] > pass_counter:
         index += 1
-    return index
+    if thresholds[index][0] > pass_counter:
+        return WORST_GRADE
+    return thresholds[index][1]
 
 def grades_eval (l_l_scores: list[list[int]]) -> str :
     assert l_l_scores
-    thresholds = ((5, 5, 4, 4, 4, 4, 4, 4, 3, 3, 3),
-                  (11, 11, 10, 10, 10, 9, 9, 8, 8, 8, 7),
-                  (13, 13, 12, 12, 11, 11, 10, 10, 9, 9, 8),
-                  (13, 13, 12, 12, 11, 11, 10, 10, 9, 9, 8),
-                  (39, 38, 37, 35, 34, 32, 21, 29, 28, 27, 25))
     final_score = 0
     for index, l_scores in enumerate(l_l_scores):
-        score = get_scores(l_scores, thresholds[index])
+        score = get_scores(l_scores, THRESHOLDS[index])
         final_score = max(score, final_score)
-    return grades[final_score]
+    return GRADES[final_score]
