@@ -19,17 +19,6 @@ grades = ("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-")
 
 def get_scores(scores: list[int], thresholds: tuple[int, int, int, int, int, int, int, int, int, int, int]) -> int :
     pass_counter = 0
-    for curr_score in scores:
-        if curr_score >= 2:
-            pass_counter += 1
-
-    index = 0
-    while index < len(thresholds) - 1 and thresholds[index] > pass_counter:
-        index += 1
-    return index
-
-def get_scores_with_redemption(scores: list[int], thresholds: tuple[int, int, int, int, int, int, int, int, int, int, int]) -> int :
-    pass_counter = 0
     one_counter = 0
     three_counter = 0
     for curr_score in scores:
@@ -40,7 +29,7 @@ def get_scores_with_redemption(scores: list[int], thresholds: tuple[int, int, in
         elif curr_score == 1:
             one_counter += 1
     index = 0
-    add_to_pass = max(one_counter, three_counter // 2)
+    add_to_pass = min(one_counter, three_counter // 2)
     pass_counter += add_to_pass
     while index < len(thresholds) - 1 and thresholds[index] > pass_counter:
         index += 1
@@ -55,9 +44,6 @@ def grades_eval (l_l_scores: list[list[int]]) -> str :
                   (39, 38, 37, 35, 34, 32, 21, 29, 28, 27, 25))
     final_score = 0
     for index, l_scores in enumerate(l_l_scores):
-        if index in (1, 3, 4):
-            score = get_scores_with_redemption(l_scores, thresholds[index])
-        else:
-            score = get_scores(l_scores, thresholds[index])
+        score = get_scores(l_scores, thresholds[index])
         final_score = max(score, final_score)
     return grades[final_score]
