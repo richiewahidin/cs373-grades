@@ -10,7 +10,7 @@
 
 * Git SHA: (most recent Git SHA, final change to your repo will change this, that's ok)
 
-* GitLab Pipelines: (link to your GitLab CI Pipeline)
+* GitLab Pipelines: https://gitlab.com/richiewahidin/cs373-grades/-/pipelines
 
 * Estimated completion time: 12
 

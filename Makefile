@@ -68,7 +68,7 @@ push:
 	git add README.md
 	git add run_Grades.py
 	git add test_Grades.py
-	git commit -m "updated make run, should fix pipeline now"
+	git commit -m "updated the README with pipelines, more than 5 commits; Closes #17, closes #26"
 	git push
 	git status
 
