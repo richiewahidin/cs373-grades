@@ -68,7 +68,7 @@ push:
 	git add README.md
 	git add run_Grades.py
 	git add test_Grades.py
-	git commit -m "updated the README with pipelines, more than 5 commits; Closes #17, closes #26"
+	git commit -m "wrote unit tests with 100% coverage; Closes #7, closes #8, closes #12, closes #13"
 	git push
 	git status
 
@@ -97,9 +97,9 @@ run: ../cs373-grades-tests
 	$(MYPY)   run_Grades.py
 	$(PYLINT) Grades.py
 	$(PYLINT) run_Grades.py
-	$(CHECKTESTDATA) Grades.ctd.txt ../cs373-grades-tests/gpdowning-Grades.in.txt    # change gpdowning to your GitLab-ID
-	$(PYTHON) run_Grades.py < ../cs373-grades-tests/gpdowning-Grades.in.txt > Grades.tmp.txt # change gpdowning to your GitLab-ID
-	diff Grades.tmp.txt ../cs373-grades-tests/gpdowning-Grades.out.txt               # change gpdowning to your GitLab-ID
+	$(CHECKTESTDATA) Grades.ctd.txt ../cs373-grades-tests/richiewahidin-Grades.in.txt    # change gpdowning to your GitLab-ID
+	$(PYTHON) run_Grades.py < ../cs373-grades-tests/richiewahidin-Grades.in.txt > Grades.tmp.txt # change gpdowning to your GitLab-ID
+	diff Grades.tmp.txt ../cs373-grades-tests/richiewahidin-Grades.out.txt               # change gpdowning to your GitLab-ID
 
 # execute the run harness against all of the test files in the Grades test repo and diff with the expected output
 run-all: ../cs373-grades-tests

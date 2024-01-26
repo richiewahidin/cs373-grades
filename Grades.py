@@ -15,18 +15,25 @@
 # grades_eval
 # -----------
 
+# Constant tuple that stores the final grades to be returned per set of scores
 GRADES = ("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F")
-WORST_GRADE = 11
+
+# Each list of tuple(int, int) represents the first occurrence of a score and
+# the grade index associated with it. There is a different list associated with
+# each kind of assignment, i.e. projects, quizzes, etc. Thresholds is therefore
+# a list of list of tuples
 THRESHOLDS = [[(5, 0), (4, 2), (3,8), (0, 11)],
               [(11, 0), (10, 2), (9, 5), (8, 7), (7, 10), (0, 11)],
               [(13, 0), (12, 2), (11, 4), (10, 6), (9, 8), (8, 10), (0, 11)],
               [(13, 0), (12, 2), (11, 4), (10, 6), (9, 8), (8, 10), (0, 11)],
               [(39, 0), (38, 1), (37, 2), (35, 3), (34, 4), (32, 5), (31, 6), (29, 7), (28, 8), (27, 9), (25, 10), (0, 11)]]
+
+# Constants for each individual score (except 0 since it's unnecessary)
 EXCELLENT = 3
 MEETS_EXPECTATIONS = 2
 REVISION_NEEDED = 1
 
-
+# helper method that gets the score for each category of the assignments
 def get_scores(scores: list[int], thresholds: list[tuple[int, int]]) -> int :
     pass_counter = 0
     one_counter = 0
