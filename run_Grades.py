@@ -18,7 +18,8 @@ import Grades
 # grades_read
 # -----------
 
-def grades_read () -> list[list[int]] :
+
+def grades_read() -> list[list[int]]:
     # read newline
     input()
 
@@ -27,31 +28,36 @@ def grades_read () -> list[list[int]] :
 
     return l_l_scores
 
+
 # ------------
 # grades_print
 # ------------
 
-def grades_print (letter_grade: str) -> None :
+
+def grades_print(letter_grade: str) -> None:
     print(letter_grade)
+
 
 # ----
 # main
 # ----
 
-def main () -> None :
+
+def main() -> None:
     # read number of test cases
     input()
 
     # read, eval, print (REPL)
-    try :
-        while True :
+    try:
+        while True:
             l_l_scores: list[list[int]] = grades_read()
-            letter:     str             = Grades.grades_eval(l_l_scores)
+            letter: str = Grades.grades_eval(l_l_scores)
             grades_print(letter)
-    except EOFError :
+    except EOFError:
         pass
 
-if __name__ == "__main__" : #pragma: no cover
+
+if __name__ == "__main__":  # pragma: no cover
     main()
 
 """
