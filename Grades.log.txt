@@ -1,0 +1,113 @@
+commit 3378317e2793052bf2e1f658d5551a1998b78cb2
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Tue Jan 30 16:48:42 2024 -0600
+
+    refactored code, updated unit tests, added comments; closes #21, closes #37, closes #23
+
+commit 56cfd35629bf64d58f362a2b6bf1e4195049df15
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Fri Jan 26 14:16:15 2024 -0600
+
+    wrote unit tests with 100% coverage; Closes #7, closes #8, closes #12, closes #13
+
+commit e2af470f23bb5557a20ee51630f33665deee537c
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Thu Jan 25 17:14:10 2024 -0600
+
+    updated the README with pipelines, more than 5 commits; Closes #17, closes #26
+
+commit 2995a7f3d60d41efbcc72e6a082758fed8a73936
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Thu Jan 25 17:11:15 2024 -0600
+
+    added test.py to generate better tests, closes #36
+
+commit 5b9ebac44aef568874137f7c0999b2708f517c81
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Thu Jan 25 17:07:00 2024 -0600
+
+    updated make run, should fix pipeline now
+
+commit 6fcea7189e5da9857ba0538aed44499381d18773
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Thu Jan 25 17:03:18 2024 -0600
+
+    Added F to the possible grades, now passing acceptance tests; closes #35
+
+commit d869dcbe5ef2fd667f6348f5538bfab538eb717c
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Thu Jan 25 15:40:38 2024 -0600
+
+    Updated Grades.py to be more optimal;Closes #19, closes #33, closes #34
+
+commit 9179a363e589055f8e9985f82574c621376965ba
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Wed Jan 24 19:58:48 2024 -0600
+
+    Initial solution working now, fixed given unit test. Closes #11, closes #29, closes #30, closes #31
+
+commit db23107883a4d03544ede02f20847f7ef7178aa8
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Wed Jan 24 19:50:06 2024 -0600
+
+    initial solution not working
+
+commit 031a07bbdb5ca20955c2e2681c6e2e6a35b73c46
+Author: Richie Wahidin <richie@cs.utexas.edu>
+Date:   Wed Jan 24 17:55:14 2024 -0600
+
+    Closes #1, closes #2, closes #3, closes #4; initial project administration work
+
+commit 4fc5610f43555f133e297d9593dd84d895df4a62
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 22 14:10:37 2024 -0600
+
+    another commit
+
+commit 7b36325e4518815d775d405ea041a5cbfe8f1bed
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 22 12:30:36 2024 -0600
+
+    another commit
+
+commit d5d9ad5024f28ec2fe7c328de4693e8929783b92
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 22 12:29:12 2024 -0600
+
+    another commit
+
+commit 1e8bae0fe1058c0f957d89f66ccf725484cd93b8
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 22 12:17:46 2024 -0600
+
+    another commit
+
+commit ce5fe4537569d47ec1d28b99506947be88f9b924
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Sat Jan 20 18:58:38 2024 -0600
+
+    another commit
+
+commit 764b877680aac3b2dbf9a1e1c1d1ed05ac2d83ae
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Sat Jan 20 09:59:54 2024 -0600
+
+    another commit
+
+commit 34f855685023af415c4dc40a34ed227310615203
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 15 15:41:13 2024 -0600
+
+    another commit
+
+commit 6a2820636abcf0a8b5480b6a29a2f287ce40c064
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 15 13:33:43 2024 -0600
+
+    another commit
+
+commit 7c22bf208bada5ddc43f59dcbbda2fafa9c70c85
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Jan 15 13:20:30 2024 -0600
+
+    first commit

@@ -68,7 +68,7 @@ push:
 	git add README.md
 	git add run_Grades.py
 	git add test_Grades.py
-	git commit -m "refactored code, updated unit tests, added comments; closes #21, closes #37, closes #23"
+	git commit -m "final steps; closes #24, closes #25, closes #27"
 	git push
 	git status
 

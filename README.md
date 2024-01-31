@@ -8,12 +8,12 @@
 
 * HackerRank ID: richiewahidin
 
-* Git SHA: (most recent Git SHA, final change to your repo will change this, that's ok)
+* Git SHA: 3378317e2793052bf2e1f658d5551a1998b78cb2
 
 * GitLab Pipelines: https://gitlab.com/richiewahidin/cs373-grades/-/pipelines
 
 * Estimated completion time: 12
 
-* Actual completion time: 
+* Actual completion time: 8
 
 * Comments: (any additional comments you have)
